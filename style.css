@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.subscribeNewsletter__container {
+  padding: 70px 60px;
+  display: flex;
+}
+
+.subscribeNewsletter__containerLeft {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  height: 300px;
+}
+
+.subscribeNewsletter__img {
+  transform: scale(8);
+}
+
+.subscribeNewsletter__containerRight {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.subscribeNewsletter__containerRight > * {
+  margin: 5px;
+  display: flex;
+}
+
+.subscribeNewsletter__containerRight > h1 {
+  color: #4446bf;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.5rem;
+}
+
+.subscribeNewsletter__containerRight > h2 {
+  width: 90%;
+  color: #888;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+}
+
+.subscribeNewsletter__form {
+  padding: 10px 0;
+}
+
+.subscribeNewsletter__emailInput {
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 1px solid #aaa;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  outline: none;
+  width: 60%;
+}
+
+.subscribeNewsletter__submitButton {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border: 1px solid #aaa;
+  border-left: none;
+  cursor: pointer;
+  background-color: #4446bf;
+  color: white;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+  .subscribeNewsletter__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribeNewsletter__containerLeft {
+    padding: 1px;
+    height: 120px;
+  }
+
+  .subscribeNewsletter__img {
+    transform: scale(5);
+  }
+
+  .subscribeNewsletter__containerRight {
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .subscribeNewsletter__containerRight > h1 {
+    /* width: 100%; */
+    text-align: center;
+  }
+
+  .subscribeNewsletter__containerRight > h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .subscribeNewsletter__form {
+    margin: 20px 0;
+  }
+
+  .subscribeNewsletter__emailInput,
+  .subscribeNewsletter__submitButton {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .subscribeNewsletter__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 30px;
+  }
+
+  .subscribeNewsletter__containerRight {
+    padding: 30px;
+  }
+
+  .subscribeNewsletter__containerRight > * {
+    margin: 10px 0;
+  }
+
+  .subscribeNewsletter__containerRight > h1 {
+    /* width: 100%; */
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .subscribeNewsletter__containerRight > h2 {
+    font-size: 1.3rem;
+  }
+
+  .subscribeNewsletter__emailInput,
+  .subscribeNewsletter__submitButton {
+    font-size: 1.1rem;
+  }
+}
+
+/* Footer */
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  background-color: #4446bf;
+  color: white;
+}
+
+.footer__topContainer {
+  padding: 100px 70px;
+  display: flex;
+  justify-content: stretch;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.footer__subContainers {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__subcontainer {
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer__subcontainer h1 {
+  font-size: 1.7rem;
+  margin: 10px 0;
+}
+
+.footer__subcontainer h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer__subcontainer ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  width: 100px;
+}
+
+.footer__subcontainer ul li {
+  list-style: none;
+}
+
+.footer__subcontainer ul li a {
+  color: white;
+}
+
+.footer__logo {
+  width: 150px;
+}
+
+.footer__bottomContainer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1160px) {
+  .footer__topContainer {
+    padding: 80px 100px;
+  }
+
+  .footer__subContainers {
+    flex-direction: column;
+  }
+
+  .footer__subcontainer {
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer__topContainer {
+    padding: 60px 0px;
+  }
+
+  .footer__subContainers {
+    flex-direction: column;
+  }
+
+  .footer__subcontainer {
+    margin: 5px;
+  }
+}
